@@ -3,7 +3,11 @@ import { StyleSheet, View } from "react-native";
 
 type CardProps = {};
 export const Card = ({ children }: React.PropsWithChildren<CardProps>) => {
-  return <View style={styles.container}>{children}</View>;
+  return (
+    <View style={styles.container} testID="CardContainer">
+      {children}
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
