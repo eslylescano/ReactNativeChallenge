@@ -1,57 +1,36 @@
-![picture of storybook](https://github.com/user-attachments/assets/cf98766d-8b90-44ab-b718-94ab16e63205)
+# Latus Group React Native Tech Test
 
-# getting started
+This tech test is designed to assess a small range of your React Native
+knowledge. You should spend no more than 2 hours on this task.
 
-```sh
-npx create-expo-app --template expo-template-storybook AwesomeStorybook
+## The challenge
+
+You've been asked to create a component to display data of the following
+shape:
+
+```json
+{
+  "data": [
+    {
+      "from": "2018-01-20T12:00Z",
+      "to": "2018-01-20T12:30Z",
+      "intensity": {
+        "max": 320,
+        "average": 266,
+        "min": 180,
+        "index": "moderate"
+    }
+  }]
+}
 ```
 
-or
+The following design has been provided for a single item from the array:
 
-```sh
-yarn create expo-app --template expo-template-storybook AwesomeStorybook
-```
+![Screenshot](assets/CardScreenshot.png)
 
-# app
+> [!NOTE]
+> A `Card` component has already been created, and can be reused in your
+> component.
 
-```sh
-yarn start
-```
-
-# Ondevice
-
-In this template you can now run `yarn storybook` to start ondevice storybook or `yarn start` to start your expo app.
-This works via env variables and expo constants.
-
-```sh
-# either
-yarn storybook
-
-# ios
-yarn storybook:ios
-
-# android
-yarn storybook:android
-```
-
-If you add new stories on the native (ondevice version) you either need to have the watcher running or run the stories loader
-
-To update the stories one time
-
-```sh
-yarn storybook-generate
-```
-
-# Web
-
-Start react native web storybook:
-
-```
-yarn storybook:web
-```
-
-build react native web storybook:
-
-```sh
-yarn build-storybook
-```
+> [!NOTE]
+> The above example uses the `Feathers` icon set
