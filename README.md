@@ -34,3 +34,20 @@ The following design has been provided for a single item from the array:
 
 > [!NOTE]
 > The above example uses the `Feathers` icon set
+
+### Must haves
+
+- An item component that matches the designs
+- A screen that displays any number of the above component
+- Appropriate tests for any components created
+
+### Nice to haves
+
+- Appropriate stories for any components created
+
+## Storybook
+
+To run `Storybook` on your simulator, run the appropriate script:
+
+- `npm run storybook:ios` for iOS simulator
+- `npm run storybook:android` for Android simulator
