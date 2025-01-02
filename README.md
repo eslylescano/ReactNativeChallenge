@@ -15,18 +15,22 @@ shape:
       "from": "2018-01-20T12:00Z",
       "to": "2018-01-20T12:30Z",
       "intensity": {
-        "max": 320,
-        "average": 266,
-        "min": 180,
+        "forecast": 266,
+        "actual": 263,
         "index": "moderate"
+      }
     }
-  }]
+  ]
 }
 ```
 
-The following design has been provided for a single item from the array:
+The following designs have been provided for a single item from the array:
 
-![Screenshot](assets/CardScreenshot.png)
+![Screenshot](assets/VeryLow.png)
+![Screenshot](assets/Low.png)
+![Screenshot](assets/Moderate.png)
+![Screenshot](assets/High.png)
+![Screenshot](assets/VeryHigh.png)
 
 > [!NOTE]
 > A `Card` component has already been created, and can be reused in your
