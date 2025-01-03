@@ -1,7 +1,9 @@
 # Latus Group React Native Tech Test
 
-This tech test is designed to assess a small range of your React Native
+This tech test is designed to assess your React Native
 knowledge. You should spend no more than 2 hours on this task.
+
+Fork this repo to get started, and send us an email with a link to your solution.
 
 ## The challenge
 
@@ -11,7 +13,7 @@ shape:
 ```json
 {
   "data": [
-    {
+    {      
       "from": "2018-01-20T12:00Z",
       "to": "2018-01-20T12:30Z",
       "intensity": {
@@ -19,7 +21,17 @@ shape:
         "actual": 263,
         "index": "moderate"
       }
-    }
+    },
+    {          
+      "from": "2018-01-20T12:30Z",
+      "to": "2018-01-20T13:00Z",
+      "intensity": {
+        "forecast": 267,
+        "actual": 265,
+        "index": "high"
+      }
+    },
+    ...
   ]
 }
 ```
