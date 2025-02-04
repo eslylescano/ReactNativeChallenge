@@ -21,6 +21,14 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: <Text>Hello</Text>,
+    data: {
+      from: "2018-01-20T12:00Z",
+      to: "2018-01-20T12:30Z",
+      intensity: {
+        forecast: 266,
+        actual: 263,
+        index: "moderate",
+      },
+    },
   },
 };
