@@ -9,7 +9,7 @@ type ListProps = {
 
 export const IntensityList = ({ data }: ListProps) => {
   return (
-    <View>
+    <View testID="IntensityList">
       <FlatList
         data={data}
         keyExtractor={(item) =>
