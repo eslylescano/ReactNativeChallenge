@@ -16,10 +16,19 @@ const intensityColors: { [key: string]: string } = {
   veryhigh: "#D32F2F",
 };
 
+const intensityIndexes: { [key: string]: string } = {
+  verylow: "Very low",
+  low: "Low",
+  moderate: "Moderate",
+  high: "High",
+  veryhigh: "Very High",
+};
+
 export const Card = ({ data }: CardProps) => {
   const formattedFrom = format(new Date(data.from), "HH:mm");
   const formattedTo = format(new Date(data.to), "HH:mm");
   const intensityColor = intensityColors[data.intensity.index];
+  const intensityIndex = intensityIndexes[data.intensity.index];
   return (
     <View style={styles.container} testID="CardContainer">
       <Text style={styles.timeRange}>
@@ -37,7 +46,7 @@ export const Card = ({ data }: CardProps) => {
         </View>
         <View style={styles.item}>
           <Feather name="bar-chart-2" size={40} color={intensityColor} />
-          <Text style={styles.valueText}>{data.intensity.index}</Text>
+          <Text style={styles.valueText}>{intensityIndex}</Text>
         </View>
       </View>
     </View>
